@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "title": "RobotLife",
+      "description": "Um gerenciador de tarefas, que ajudam o usuário a fixar hábitos melhores e mais saudáveis em sua vida.",
+      "icon": "https://media.graphassets.com/iWwbewJxS8mqgBFVkaVB",
+      "linkProject": "https://github.com/diovanealves/RobotLife",
+      "linkGithub": "https://github.com/diovanealves/RobotLife",
+      "technology": "React-Native TailwindCS"
+    },
+    {
+      "title": "QrCode",
+      "description": "Esse projeto serve para gerar QrCode e compartilhar com seus amigos.",
+      "icon": "https://media.graphassets.com/vn5H30KmSnuDaAxlCkaI",
+      "linkProject": "https://diovanealves.github.io/QrCodeGenerator/",
+      "linkGithub": "https://github.com/diovanealves/QrCodeGenerator",
+      "technology": "React  TailwindCSS"
+    }
+  ]
+}
