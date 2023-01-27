@@ -19,7 +19,8 @@
 - [x] Responsividade em dispositivos Mobile.
 - [ ] Pagina em Ingles.
 - [ ] Animação ao rolar a página.
-- [ ] Personalização da Scroll Bar.
+- [ ] Projetos vindo do Back-End.
+- [x] Personalização da Scroll Bar.
 
 <h2 align="center">Autor</h2>
 <table>

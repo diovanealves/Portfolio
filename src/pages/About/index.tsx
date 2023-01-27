@@ -1,13 +1,16 @@
-export default function AboutMe() {
+export function About() {
   return (
-    <div className="flex flex-wrap items-center justify-around gap-6">
+    <div
+      className="flex flex-wrap items-center justify-around gap-6 md:mt-72 mt-6"
+      id="About"
+    >
       <img
         src="https://avatars.githubusercontent.com/u/87160050?v=4"
         className="rounded-full max-w-xs w-2/4"
         alt="Foto de Perfil Github"
       />
       <div className="flex flex-col ml-4">
-        <span className="text-3xl font-bold text-[#8CD1FF]">Sobre Mim.</span>
+        <span className="text-3xl font-bold text-highlight">Sobre Mim.</span>
         <span className="text-lg">
           Me chamo Diovane Alves, mas pode me chamar como “Deluxy”. Prazer!
         </span>
