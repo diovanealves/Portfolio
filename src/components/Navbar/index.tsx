@@ -1,6 +1,5 @@
 import { Spin as Hamburger } from "hamburger-react";
 import { useState } from "react";
-import IconNavBar from "../../assets/IconNavbar.svg";
 export function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const links = [
@@ -17,7 +16,9 @@ export function Navbar() {
 
   return (
     <nav className="flex items-center justify-between pt-6">
-      <img src={IconNavBar} alt="" className="w-10 ml-7" />
+      <h1 className="flex items-center gap-3 w-10 ml-7 text-xl font-semibold">
+        <span className="text-highlight text-3xl font-bold">/ </span> Diovane
+      </h1>
       <div className="z-20 fixed right-5 cursor-pointer md:hidden">
         <Hamburger
           size={20}
@@ -27,7 +28,7 @@ export function Navbar() {
         />
       </div>
       <ul
-        className={`bg-highlightBackground rounded-lg backdrop-blur-lg md:pl-10 pr-28 z-10 md:static fixed top-0 pt-16 md:h-auto h-screen duration-300 ease-linear ${
+        className={`bg-highlightBackground rounded-tl-lg backdrop-blur-lg md:pl-10 pr-28 z-10 md:static fixed top-0 pt-16 md:pt-0 md:h-auto h-screen duration-300 ease-linear ${
           !isOpen ? "right-[-100%]" : "right-0"
         }`}
       >

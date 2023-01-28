@@ -9,7 +9,7 @@ export function Home() {
   return (
     <div id="Home">
       <Navbar />
-      <div className="flex flex-wrap mt-16 md:mt-32  items-center justify-center md:justify-evenly">
+      <div className="flex flex-wrap mt-24 md:mt-10  items-center justify-center md:justify-evenly">
         <ul>
           <li className="text-2xl lg:text-5xl">👋 Saudações</li>
           <li className="text-4xl lg:text-6xl text-highlight font-bold py-1">

@@ -1,7 +1,7 @@
 export function About() {
   return (
     <div
-      className="flex flex-wrap items-center justify-around gap-6 md:mt-72 mt-6"
+      className="flex flex-wrap items-center justify-around gap-6 md:mt-32 mt-6"
       id="About"
     >
       <img

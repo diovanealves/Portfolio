@@ -12,7 +12,7 @@ import {
 
 export function Skills() {
   return (
-    <div className="flex flex-col items-center mt-28 mb-36" id="Skills">
+    <div className="flex flex-col items-center mt-16 mb-12" id="Skills">
       <h1 className="text-2xl text-highlight font-bold">Skills</h1>
       <p className="text-2xl font-semibold mt-2 mb-10">
         Techs que uso no dia a dia
