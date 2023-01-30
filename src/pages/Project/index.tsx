@@ -3,7 +3,11 @@ import { CardProject } from "../../components/CardProject";
 
 export function Project() {
   return (
-    <div className=" flex flex-col items-center mt-7 md:mt-20" id="Project">
+    <div
+      className=" flex flex-col items-center mt-7 md:mt-20"
+      id="Project"
+      data-aos="zoom-in"
+    >
       <h1 className="text-4xl text-highlight font-bold mt-6">Projetos</h1>
       <p>Trabalhos e projetos.</p>
       <CardProject />

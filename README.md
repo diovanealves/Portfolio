@@ -17,8 +17,7 @@
 <h2 align="center">Melhorias</h2>
 
 - [x] Responsividade em dispositivos Mobile.
-- [ ] Pagina em Ingles.
-- [ ] Animação ao rolar a página.
+- [x] Animação ao rolar a página.
 - [ ] Projetos vindo do Back-End.
 - [x] Personalização da Scroll Bar.
 

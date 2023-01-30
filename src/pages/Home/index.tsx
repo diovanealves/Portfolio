@@ -10,7 +10,7 @@ export function Home() {
     <div id="Home">
       <Navbar />
       <div className="flex flex-wrap mt-24 md:mt-10  items-center justify-center md:justify-evenly">
-        <ul>
+        <ul data-aos="zoom-in">
           <li className="text-2xl lg:text-5xl">👋 Saudações</li>
           <li className="text-4xl lg:text-6xl text-highlight font-bold py-1">
             Diovane Alves
@@ -25,7 +25,7 @@ export function Home() {
               deleteSpeed={100}
             />
           </li>
-          <li className="flex justify-center gap-4 mt-6">
+          <li className="flex justify-center gap-4 mt-6" data-aos="zoom-in">
             <a href="www.linkedin.com/in/alvdiovane" target="_blank">
               <BsLinkedin
                 size={35}
@@ -46,7 +46,12 @@ export function Home() {
             </a>
           </li>
         </ul>
-        <img src={LogoHome} alt="" className="max-w-3xl w-4/5" />
+        <img
+          src={LogoHome}
+          alt=""
+          className="max-w-3xl w-4/5"
+          data-aos="zoom-in"
+        />
       </div>
     </div>
   );
