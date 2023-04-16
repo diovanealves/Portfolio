@@ -13,13 +13,13 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="absolute w-screen flex items-center justify-between my-5">
+    <nav className="absolute w-full  flex items-center justify-between my-5">
       <a href="/" className="flex items-center gap-1 text-xl font-bold mx-6">
         <strong className="text-3xl text-[#8CD1FF] font-bold">|</strong>
         Diovane
       </a>
 
-      <div className="z-20 fixed right-5 cursor-pointer md:hidden">
+      <div className="z-20 mr-5 cursor-pointer md:hidden">
         <List size={26} onClick={() => setOpen(!open)} />
       </div>
 
