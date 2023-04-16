@@ -1,4 +1,4 @@
-import { List } from "@phosphor-icons/react";
+import { List, X } from "@phosphor-icons/react";
 import { useState } from "react";
 
 export function Navbar() {
@@ -20,7 +20,11 @@ export function Navbar() {
       </a>
 
       <div className="z-20 mr-5 cursor-pointer md:hidden">
-        <List size={26} onClick={() => setOpen(!open)} />
+        {!open ? (
+          <List size={26} onClick={() => setOpen(!open)} />
+        ) : (
+          <X size={26} onClick={() => setOpen(!open)} />
+        )}
       </div>
 
       <ul
