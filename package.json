@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.12",
     "@phosphor-icons/react": "^2.0.8",
+    "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-simple-typewriter": "^5.0.1"
