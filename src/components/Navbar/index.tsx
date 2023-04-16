@@ -5,17 +5,17 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { name: "Ínicio", url: "#Inicio" },
-    { name: "Quem sou", url: "#QuemSou" },
-    { name: "Conhecimentos", url: "#Conhecimentos" },
-    { name: "Projetos", url: "#Projetos" },
-    { name: "Contato", url: "#Contato" },
+    { name: "Ínicio", url: "Inicio" },
+    { name: "Quem sou", url: "QuemSou" },
+    { name: "Conhecimentos", url: "Conhecimentos" },
+    { name: "Projetos", url: "Projetos" },
+    { name: "Contato", url: "Contato" },
   ];
 
   return (
-    <nav className="flex items-center justify-between pt-4 mx-5">
-      <a href="/" className="flex items-center gap-1 text-xl font-bold ">
-        <strong className="text-3xl text-[#8CD1FF] font-bold">/</strong>
+    <nav className="absolute w-screen flex items-center justify-between my-5">
+      <a href="/" className="flex items-center gap-1 text-xl font-bold mx-6">
+        <strong className="text-3xl text-[#8CD1FF] font-bold">|</strong>
         Diovane
       </a>
 
