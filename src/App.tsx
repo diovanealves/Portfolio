@@ -5,6 +5,7 @@ import { Client } from "./graphql/apollo";
 import { Home } from "./components/Home";
 import { AboutMe } from "./components/AboutMe";
 import { Project } from "./components/Project";
+import { NavbarToTop } from "./components/NavbarToTop";
 
 export function App() {
   return (
@@ -12,6 +13,7 @@ export function App() {
       <Home />
       <AboutMe />
       <Project />
+      <NavbarToTop />
     </ApolloProvider>
   );
 }

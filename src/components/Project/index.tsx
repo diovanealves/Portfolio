@@ -1,9 +1,22 @@
+import { ArrowRight } from "@phosphor-icons/react";
 import { CardProject } from "../CardProject";
 
 export function Project() {
   return (
-    <div>
+    <section className="text-center mt-24" id="Projetos">
+      <h1 className="text-[#8CD1FF] text-4xl font-bold mb-8">Projetos</h1>
       <CardProject />
-    </div>
+
+      <a
+        href="https://github.com/diovanealves"
+        target="_blank"
+        className="absolute right-4"
+      >
+        <label className="flex items-center gap-2 mt-10 text-[#8CD1FF] hover:scale-110 duration-100 cursor-pointer">
+          <p>Veja mais projetos no meu Github</p>
+          <ArrowRight size={24} />
+        </label>
+      </a>
+    </section>
   );
 }
