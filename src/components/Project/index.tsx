@@ -1,3 +1,9 @@
+import { CardProject } from "../CardProject";
+
 export function Project() {
-  return <></>;
+  return (
+    <div>
+      <CardProject />
+    </div>
+  );
 }
