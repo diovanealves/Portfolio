@@ -1,10 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
-import {
-  GithubLogo,
-  LinkedinLogo,
-  TwitchLogo,
-  TwitterLogo,
-} from "@phosphor-icons/react";
+import { BsGithub, BsLinkedin, BsTwitter, BsTwitch } from "react-icons/bs";
+
 import { Navbar } from "../Navbar";
 
 export function Home() {
@@ -27,19 +23,19 @@ export function Home() {
 
         <div className="absolute bottom-0 flex gap-4  mb-5">
           <a href="https://www.linkedin.com/in/alvdiovane/" target="_blank">
-            <LinkedinLogo className="w-7 h-7 md:w-10 md:h-10 hover:bg-[#8CD1FF] hover:p-2 hover:rounded-full hover:text-black" />
+            <BsLinkedin className="w-7 h-7 md:w-10 md:h-10 hover:text-[#8CD1FF] hover:scale-110 duration-150 " />
           </a>
 
           <a href="https://github.com/diovanealves" target="_blank">
-            <GithubLogo className="w-7 h-7 md:w-10 md:h-10 hover:bg-[#8CD1FF] hover:p-2 hover:rounded-full hover:text-black" />
+            <BsGithub className="w-7 h-7 md:w-10 md:h-10 hover:text-[#8CD1FF] hover:scale-110 duration-150" />
           </a>
 
           <a href="https://twitter.com/deluxyfps" target="_blank">
-            <TwitterLogo className="w-7 h-7 md:w-10 md:h-10 hover:bg-[#8CD1FF] hover:p-2 hover:rounded-full hover:text-black" />
+            <BsTwitter className="w-7 h-7 md:w-10 md:h-10 hover:text-[#8CD1FF] hover:scale-110 duration-150 " />
           </a>
 
           <a href="https://www.twitch.tv/deluxyfps" target="_blank">
-            <TwitchLogo className="w-7 h-7 md:w-10 md:h-10 hover:bg-[#8CD1FF] hover:p-2 hover:rounded-full hover:text-black" />
+            <BsTwitch className="w-7 h-7 md:w-10 md:h-10 hover:text-[#8CD1FF] hover:scale-110 duration-150" />
           </a>
         </div>
       </div>

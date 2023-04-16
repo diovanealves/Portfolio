@@ -1,4 +1,5 @@
-import { ArrowRight } from "@phosphor-icons/react";
+import { ImArrowRight2 } from "react-icons/im";
+
 import { CardProject } from "../CardProject";
 
 export function Project() {
@@ -14,7 +15,7 @@ export function Project() {
       >
         <label className="flex items-center gap-2 mt-10 text-[#8CD1FF] hover:scale-110 duration-100 cursor-pointer">
           <p>Veja mais projetos no meu Github</p>
-          <ArrowRight size={24} />
+          <ImArrowRight2 size={24} />
         </label>
       </a>
     </section>

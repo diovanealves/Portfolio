@@ -1,4 +1,4 @@
-import { GithubLogo, Globe } from "@phosphor-icons/react";
+import { ImGithub, ImLink } from "react-icons/im";
 import { useQuery } from "@apollo/client";
 import { Get_Project } from "../../graphql/queries/GetProject";
 
@@ -50,14 +50,14 @@ export function CardProject() {
                     target="_blank"
                     className="hover:text-[#8CD1FF]"
                   >
-                    <Globe size={24} />
+                    <ImLink size={24} />
                   </a>
                   <a
                     href={project.githubRepository}
                     target="_blank"
                     className="hover:text-[#8CD1FF]"
                   >
-                    <GithubLogo size={24} />
+                    <ImGithub size={24} />
                   </a>
                 </div>
               </div>
