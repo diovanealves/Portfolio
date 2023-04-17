@@ -42,6 +42,8 @@ export function FormContact() {
     <form className="flex flex-col gap-4 mt-10" onSubmit={sendEmail}>
       <input
         className="bg-[#041A27] rounded-lg border-2 border-[#8CD1FF] text-center p-1"
+        pattern="^[a-zA-Z]{2,}(?: [a-zA-Z]+){1,}$"
+        title="Por favor, insira seu nome completo"
         type="text"
         placeholder="Digite seu nome"
         onChange={(e) => setName(e.target.value)}
@@ -50,6 +52,8 @@ export function FormContact() {
 
       <input
         className="bg-[#041A27] rounded-lg border-2 border-[#8CD1FF] text-center p-1"
+        pattern="^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"
+        title="Por favor, insira um endereço de email válido."
         type="text"
         placeholder="Digite seu email"
         onChange={(e) => setEmail(e.target.value)}
