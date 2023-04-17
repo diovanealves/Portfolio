@@ -27,6 +27,7 @@ export function FormContact() {
       )
       .then(
         (res) => {
+          alert("Email Enviado com Sucesso");
           setName("");
           setEmail("");
           setMessage("");

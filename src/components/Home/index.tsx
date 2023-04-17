@@ -23,31 +23,31 @@ export function Home() {
           />
         </p>
 
-        <div className="absolute bottom-0 flex gap-4  mb-5">
+        <div className="absolute bottom-0 flex gap-6  mb-5">
           <a href="https://www.linkedin.com/in/alvdiovane/" target="_blank">
             <BsLinkedin
-              size={38}
+              size={30}
               className="hover:text-[#8CD1FF] hover:scale-110 duration-150 "
             />
           </a>
 
           <a href="https://github.com/diovanealves" target="_blank">
             <BsGithub
-              size={38}
+              size={30}
               className="hover:text-[#8CD1FF] hover:scale-110 duration-150"
             />
           </a>
 
           <a href="https://twitter.com/deluxyfps" target="_blank">
             <BsTwitter
-              size={38}
+              size={30}
               className="hover:text-[#8CD1FF] hover:scale-110 duration-150 "
             />
           </a>
 
           <a href="https://www.twitch.tv/deluxyfps" target="_blank">
             <BsTwitch
-              size={38}
+              size={30}
               className="hover:text-[#8CD1FF] hover:scale-110 duration-150"
             />
           </a>
