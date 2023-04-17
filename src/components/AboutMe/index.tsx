@@ -1,7 +1,7 @@
 export function AboutMe() {
   return (
     <section
-      className="w-3/4 bg-[#052131] rounded-lg mx-auto mt-5 py-7 px-5"
+      className="max-w-6xl w-4/5 bg-[#052131] rounded-lg mx-auto mt-5 py-7 px-5"
       id="QuemSou"
     >
       <div className="flex flex-wrap items-center gap-10">
