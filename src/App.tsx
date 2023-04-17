@@ -8,6 +8,7 @@ import { Skills } from "./components/Skills";
 import { Project } from "./components/Project";
 import { NavbarToTop } from "./components/NavbarToTop";
 import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 export function App() {
   return (
@@ -17,6 +18,7 @@ export function App() {
       <Skills />
       <Project />
       <Contact />
+      <Footer />
       <NavbarToTop />
     </ApolloProvider>
   );
