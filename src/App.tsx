@@ -7,6 +7,7 @@ import { AboutMe } from "./components/AboutMe";
 import { Skills } from "./components/Skills";
 import { Project } from "./components/Project";
 import { NavbarToTop } from "./components/NavbarToTop";
+import { Contact } from "./components/Contact";
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
       <AboutMe />
       <Skills />
       <Project />
+      <Contact />
       <NavbarToTop />
     </ApolloProvider>
   );

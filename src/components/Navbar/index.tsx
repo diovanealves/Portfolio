@@ -1,4 +1,4 @@
-import { List, X } from "@phosphor-icons/react";
+import { VscListSelection, VscClose } from "react-icons/vsc";
 import { useState } from "react";
 
 export function Navbar() {
@@ -21,9 +21,9 @@ export function Navbar() {
 
       <div className="z-20 mr-5 cursor-pointer md:hidden">
         {!open ? (
-          <List size={26} onClick={() => setOpen(!open)} />
+          <VscListSelection size={26} onClick={() => setOpen(!open)} />
         ) : (
-          <X size={26} onClick={() => setOpen(!open)} />
+          <VscClose size={26} onClick={() => setOpen(!open)} />
         )}
       </div>
 
