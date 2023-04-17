@@ -5,7 +5,7 @@ import { Navbar } from "../Navbar";
 
 export function Home() {
   return (
-    <section id="Inicio">
+    <div>
       <Navbar />
       <div className="h-screen relative flex flex-col justify-center items-center">
         <p className="text-4xl">👋Saudações</p>
@@ -51,6 +51,6 @@ export function Home() {
           </a>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

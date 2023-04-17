@@ -5,7 +5,6 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { name: "Ínicio", url: "#Inicio" },
     { name: "Quem sou", url: "#QuemSou" },
     { name: "Conhecimentos", url: "#Conhecimentos" },
     { name: "Projetos", url: "#Projetos" },
