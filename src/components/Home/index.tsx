@@ -8,9 +8,11 @@ export function Home() {
     <div>
       <Navbar />
       <div className="h-screen relative flex flex-col justify-center items-center">
-        <p className="text-4xl">👋Saudações</p>
-        <h1 className="text-5xl text-[#8CD1FF] font-bold">Diovane Alves</h1>
-        <p className="text-2xl">
+        <p className="text-4xl md:text-6xl">👋Saudações</p>
+        <h1 className="text-5xl md:text-7xl my-3 text-[#8CD1FF] font-bold">
+          Diovane Alves
+        </h1>
+        <p className="text-2xl md:text-4xl">
           <Typewriter
             words={["Desenvolvedor Full Stack", "UI/UX Design"]}
             cursor

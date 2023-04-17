@@ -1,10 +1,10 @@
 export function AboutMe() {
   return (
     <section
-      className="max-w-6xl w-4/5 bg-[#052131] rounded-lg mx-auto mt-5 py-7 px-5"
+      className="max-w-4xl w-11/12 bg-[#052131] rounded-lg mx-auto mt-5 py-5 px-4"
       id="QuemSou"
     >
-      <div className="flex flex-wrap items-center gap-10">
+      <div className="flex flex-wrap items-center gap-7">
         <img
           src="https://github.com/diovanealves.png"
           className="rounded-lg max-w-xs w-full"
