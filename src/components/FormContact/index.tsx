@@ -1,7 +1,9 @@
 import { useState, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
+import SuccessfulMailing from "../SuccessfulMailing";
 
 export function FormContact() {
+  const [state, setState] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -27,7 +29,7 @@ export function FormContact() {
       )
       .then(
         (res) => {
-          alert("Email Enviado com Sucesso");
+          setState(true);
           setName("");
           setEmail("");
           setMessage("");
@@ -67,11 +69,14 @@ export function FormContact() {
         value={message}
       />
 
-      <input
+      <button
         className="bg-[#8CD1FF] text-black font-bold rounded-lg border-2 border-[#8CD1FF] h-12 hover:bg-[#041A27] hover:text-[#8CD1FF]"
         type="submit"
-        value="Enviar"
-      />
+      >
+        Enviar
+      </button>
+
+      {state && <SuccessfulMailing />}
     </form>
   );
 }

@@ -32,7 +32,7 @@ export function Footer() {
           />
         </a>
       </div>
-      <p>© 2023 Diovane Alves. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} Diovane Alves. All rights reserved.</p>
     </div>
   );
 }
