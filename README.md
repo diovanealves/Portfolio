@@ -26,9 +26,6 @@ Primeiramente crie um arquivo .env na raiz do projeto com os seguintes dados
 
 ```sh
   VITE_GRAPHCMS_APIACESS="Sua Chave de Acesso do GRAPHCMS"
-  VITE_EMAILJS_SERVICEID="Seu ID do serviço de email"
-  VITE_EMAILJS_TEMPLATEID="O ID do Template do Email"
-  VITE_EMAILJS_PUBLICKEY="A Chave Publica da Conta"
 ```
 
 ```sh
