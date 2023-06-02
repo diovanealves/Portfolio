@@ -13,7 +13,11 @@ import {
 
 export function Skills() {
   return (
-    <section className="w-3/4 mx-auto text-center mt-16" id="Conhecimentos">
+    <section
+      className="w-3/4 mx-auto text-center mt-16"
+      id="Conhecimentos"
+      data-aos="slide-up"
+    >
       <h1 className="text-2xl font-bold mb-6">Conhecimentos.</h1>
       <div className="flex flex-wrap justify-center gap-4 p-3">
         <SiReact

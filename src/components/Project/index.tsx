@@ -1,10 +1,10 @@
 import { ImArrowRight2 } from "react-icons/im";
 
-import { CardProject } from "../CardProject";
+import { CardProject } from "./CardProject";
 
 export function Project() {
   return (
-    <section className="text-center mt-24" id="Projetos">
+    <section className="text-center mt-24" id="Projetos" data-aos="slide-up">
       <h1 className="text-[#8CD1FF] text-4xl font-bold mb-8">Projetos</h1>
       <CardProject />
 

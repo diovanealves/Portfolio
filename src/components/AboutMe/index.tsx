@@ -3,6 +3,7 @@ export function AboutMe() {
     <section
       className="max-w-4xl w-11/12 bg-[#052131] rounded-lg mx-auto mt-5 py-5 px-4"
       id="QuemSou"
+      data-aos="slide-up"
     >
       <div className="flex flex-wrap items-center gap-7">
         <img

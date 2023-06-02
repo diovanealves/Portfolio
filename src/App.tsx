@@ -1,4 +1,7 @@
 import { ApolloProvider } from "@apollo/client";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./style/global.css";
 
 import { Client } from "./graphql/apollo";
@@ -11,6 +14,17 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
 export function App() {
+  useEffect(() => {
+    AOS.init({
+      disable: "mobile",
+      duration: 400,
+      easing: "ease",
+      once: true,
+      mirror: true,
+      anchorPlacement: "top-center",
+    });
+    AOS.refresh();
+  });
   return (
     <ApolloProvider client={Client}>
       <Home />

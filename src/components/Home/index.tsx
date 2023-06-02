@@ -7,8 +7,11 @@ export function Home() {
   return (
     <section id="Main">
       <Navbar />
-      <div className="h-screen relative flex flex-col justify-center items-center">
-        <p className="text-4xl md:text-6xl">👋Saudações</p>
+      <div
+        className="h-screen relative flex flex-col justify-center items-center"
+        data-aos="zoom-in"
+      >
+        <p className="text-4xl md:text-6xl">👋Olá, Eu sou</p>
         <h1 className="text-5xl md:text-7xl my-3 text-[#8CD1FF] font-bold">
           Diovane Alves
         </h1>

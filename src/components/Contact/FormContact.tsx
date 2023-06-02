@@ -1,5 +1,5 @@
 import { useForm, ValidationError } from "@formspree/react";
-import SuccessfulMailing from "../SuccessfulMailing";
+import SuccessfulMailing from "./SuccessfulMailing";
 
 export function FormContact() {
   const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_KEY);
