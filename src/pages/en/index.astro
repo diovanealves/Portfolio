@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import Link from "../../components/link.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Diovane Alves">
+  <main>
+    <div class="h-screen grid grid-cols-2 place-items-center">
+      <Image
+        src="https://avatars.githubusercontent.com/u/87160050?v=4"
+        alt="Foto do github"
+        width="200"
+        height="200"
+        class="md:w-52 rounded-3xl"
+        loading={"eager"}
+      />
+      <div class="w-4/5">
+        <h1 class="text-lg md:text-4xl font-bold">Diovane Alves</h1>
+        <p class="opacity-75 mt-2">
+          I turn coffee into code, a passionate Full-Stack Developer dedicated
+          to creating elegant solutions.
+        </p>
+      </div>
+
+      <div class="absolute bottom-7 flex items-center gap-4">
+        <Link href="https://github.com/diovanealves">github</Link>
+        <Link href="https://www.linkedin.com/in/alvdiovane/">linkedin</Link>
+        <Link href="https://twitter.com/deluxyfps">twitter</Link>
+        <Link href="https://www.twitch.tv/deluxyfps">twitch</Link>
+        <Link href="https://www.instagram.com/diovanealv/">instagram</Link>
+      </div>
+    </div>
+  </main>
+</Layout>
