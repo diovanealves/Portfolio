@@ -1,7 +1,8 @@
 ---
-import Layout from "../layouts/Layout.astro";
----
+const acceptLanguage = Astro.request.headers.get("accept-language");
+if (acceptLanguage?.includes("en")) {
+  return Astro.redirect("/en/");
+}
 
-<Layout title="Diovane Alves">
-  <main></main>
-</Layout>
+return Astro.redirect("/pt-br/");
+---
