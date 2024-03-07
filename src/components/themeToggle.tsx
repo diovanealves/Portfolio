@@ -17,14 +17,8 @@ export default function ThemeToggle() {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  console.log(theme);
-
   return (
-    <button
-      onClick={handleClick}
-      aria-label="Toggle theme"
-      className="absolute top-4 right-10"
-    >
+    <button onClick={handleClick} aria-label="Toggle theme">
       {theme === "light" ? (
         <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
       ) : (

@@ -39,7 +39,9 @@ const { title } = Astro.props;
   <body
     class="max-w-7xl mx-auto bg-white dark:bg-backgroundDark dark:text-textDark"
   >
-    <ThemeToggle client:load />
+    <div class="absolute top-4 right-5">
+      <ThemeToggle client:load />
+    </div>
     <slot />
   </body>
 </html>
