@@ -1,18 +1,19 @@
 ---
 interface Props {
   href: string;
+  title: string;
   classname?: string;
 }
 
-const { href, classname } = Astro.props;
+const { href, title, classname } = Astro.props;
 ---
 
-<div>
+<div class={`hover:scale-125 hover:opacity-75 transition-all ${classname}`}>
   <a
     href={href}
-    class={`hover:underline ${classname}`}
     target="_blank"
     rel="noopener noreferrer"
+    aria-label={`Link para a réde social ${title}`}
   >
     <slot />
   </a>
