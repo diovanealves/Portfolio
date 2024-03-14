@@ -1,0 +1,37 @@
+---
+import { Briefcase, Download, Github, Linkedin, Twitter } from "lucide-react";
+
+interface Props {
+  title: string;
+  description: string;
+  icon?: string;
+  employmentPeriod: string;
+}
+
+const { title, description, icon, employmentPeriod } = Astro.props;
+---
+
+<div class="flex flex-1 items-center gap-10">
+  <div class="flex flex-col items-center gap-3">
+    {
+      typeof icon === "string" ? (
+        <img src={icon} alt="Ícone" class="h-6 w-6 rounded-full border-2 p-2" />
+      ) : (
+        <div class="rounded-full border-2 p-2">
+          <Briefcase />
+        </div>
+      )
+    }
+    <div
+      class="h-20 w-[2px] flex-shrink-0 bg-border"
+      :attr="{'data-orientation': 'vertical'}"
+    >
+    </div>
+  </div>
+
+  <div class="space-y-1">
+    <h1 class="font-bold">{title}</h1>
+    <p class="opacity-85">{description}</p>
+    <p class="opacity-60">{employmentPeriod}</p>
+  </div>
+</div>
