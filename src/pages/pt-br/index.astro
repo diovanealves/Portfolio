@@ -7,7 +7,9 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout title="Diovane Alves">
   <main>
-    <div class="grid h-screen grid-cols-2 place-items-center">
+    <div
+      class="grid h-screen grid-cols-1 place-content-evenly place-items-center md:grid-cols-2"
+    >
       <Image
         src="https://avatars.githubusercontent.com/u/87160050?v=4"
         alt="Foto do github"
@@ -18,7 +20,7 @@ import Layout from "../../layouts/Layout.astro";
       />
       <div class="w-4/5 space-y-2">
         <h1 class="text-lg font-bold md:text-4xl">Diovane Alves</h1>
-        <p class="opacity-75">
+        <p class="opacity-75 md:text-xl lg:text-lg">
           Transformo café em codigo, Desenvolvedor Full-Stack apaixonado por
           criar soluções elegantes.
         </p>
