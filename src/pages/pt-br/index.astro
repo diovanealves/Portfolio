@@ -1,8 +1,9 @@
 ---
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
 import { Download, Github, Linkedin, Twitter } from "lucide-react";
-import Link from "../../components/link.astro";
-import Layout from "../../layouts/Layout.astro";
+import Jobs from "@/components/jobs.astro";
+import Link from "@/components/link.astro";
+import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="Diovane Alves">
@@ -43,6 +44,39 @@ import Layout from "../../layouts/Layout.astro";
           <Link href="https://twitter.com/deluxyfps" title={"Twitter"}
             ><Twitter /></Link
           >
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h1 class="mb-3 text-3xl font-black">Sobre mim</h1>
+      <p class="leading-relaxed opacity-90">
+        Sou um desenvolvedor apaixonado com amor por código limpo e soluções
+        elegantes. Minha jornada na tecnologia começou com uma fascinação por
+        computadores e o desejo de entender como o software pode transformar o
+        mundo. Aprimorei minhas habilidades por meio de experiência prática,
+        sempre buscando novos desafios para superar meus limites. Seja
+        trabalhando em uma interface front-end ou arquitetando um backend
+        escalável, trago criatividade e precisão para tudo o que faço.
+      </p>
+
+      <div
+        class="my-10 grid grid-cols-2 place-content-center place-items-center"
+      >
+        <div>
+          <h1 class="mb-2 text-xl font-bold">Experiência Profissional</h1>
+          <p class="leading-tight opacity-75">
+            Estou livre para propostas e novas oportunidades. Entre em contato
+            comigo para marcarmos algo.
+          </p>
+        </div>
+
+        <div class="w-3/4">
+          <Jobs
+            title="Desenvolvedor Freelancer"
+            description="Desenvolvimento e manutenção de interfaces utilizando React e apis com NodeJS"
+            employmentPeriod="Jun 2022 - Atualmente"
+          />
         </div>
       </div>
     </div>

@@ -1,8 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import { Download, Github, Linkedin, Twitter } from "lucide-react";
-import Link from "../../components/link.astro";
-import Layout from "../../layouts/Layout.astro";
+import Jobs from "@/components/jobs.astro";
+import Link from "@/components/link.astro";
+import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="Diovane Alves">
@@ -42,6 +43,39 @@ import Layout from "../../layouts/Layout.astro";
           <Link href="https://twitter.com/deluxyfps" title={"Twitter"}
             ><Twitter /></Link
           >
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h1 class="mb-3 text-3xl font-black">About me</h1>
+      <p class="leading-relaxed opacity-90">
+        I'm a passionate developer with a love for clean code and elegant
+        solutions. My journey in tech started with a fascination for computers
+        and a desire to understand how software can transform the world. I've
+        honed my skills through hands-o n experience, constantly seeking out new
+        challenges to push my limits. Whether I'm working on a front-end
+        interface or architecting a scalable backend, I bring creativity and
+        precision to everything I do.
+      </p>
+
+      <div
+        class="my-10 grid grid-cols-2 place-content-center place-items-center"
+      >
+        <div>
+          <h1 class="mb-2 text-xl font-bold">Professional Experience</h1>
+          <p class="leading-tight opacity-75">
+            I am free for proposals and new opportunities, Contact me to arrange
+            something
+          </p>
+        </div>
+
+        <div class="w-3/4">
+          <Jobs
+            title="Desenvolvedor Freelancer"
+            description="Development and maintenance of interfaces using React and apis with NodeJS"
+            employmentPeriod="Jun 2022 - Present"
+          />
         </div>
       </div>
     </div>

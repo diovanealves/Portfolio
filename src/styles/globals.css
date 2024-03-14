@@ -57,6 +57,6 @@
     @apply bg-background text-foreground;
   }
   main {
-    @apply mx-auto w-11/12 max-w-screen-2xl;
+    @apply mx-auto w-11/12 max-w-5xl;
   }
 }
