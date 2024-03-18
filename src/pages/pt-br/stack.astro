@@ -20,7 +20,7 @@ import Layout from "../../layouts/Layout.astro";
             <div class="grid grid-cols-2 place-items-center gap-3 md:grid-cols-4 xl:grid-cols-6">
               {items.map((item) => (
                 <div>
-                  <CardStack title={item.title} imageSrc={item.image} />
+                  <CardStack {...item} />
                 </div>
               ))}
             </div>

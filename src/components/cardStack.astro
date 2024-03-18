@@ -1,29 +1,31 @@
 ---
 interface Props {
-  imageSrc: string;
+  image: string;
   title: string;
+  href: string;
+  classname?: string;
 }
 
-const { imageSrc, title } = Astro.props;
+const { image, title, href, classname } = Astro.props;
 ---
 
 <div
   class="flex h-32 w-36 items-center justify-center rounded-xl border border-foreground/25"
 >
   <a
-    href=""
+    href={href}
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Link para a página do projeto"
     class="space-y-2 transition-all hover:scale-110"
   >
     <img
-      src={imageSrc}
+      src={image}
       alt=""
       width="36"
       height="36"
       loading={"eager"}
-      class="mx-auto"
+      class={`mx-auto ${classname}`}
     />
     <h1 class="">{title}</h1>
   </a>
