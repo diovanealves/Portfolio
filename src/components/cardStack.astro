@@ -4,9 +4,10 @@ interface Props {
   title: string;
   href: string;
   classname?: string;
+  loading?: "eager" | "lazy";
 }
 
-const { image, title, href, classname } = Astro.props;
+const { image, title, href, classname, loading } = Astro.props;
 ---
 
 <div
@@ -16,16 +17,16 @@ const { image, title, href, classname } = Astro.props;
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="Link para a página do projeto"
-    class="space-y-2 transition-all hover:scale-110"
+    aria-label={`Link para a documentação da tecnologia ${title}`}
+    class="space-y-2 transition-all hover:scale-105"
   >
     <img
       src={image}
-      alt=""
-      width="36"
-      height="36"
-      loading={"eager"}
-      class={`mx-auto ${classname}`}
+      alt={`Logo do(a) ${title}`}
+      width="32"
+      height="32"
+      loading={loading}
+      class={`mx-auto h-8 w-8 ${classname}`}
     />
     <h1 class="">{title}</h1>
   </a>

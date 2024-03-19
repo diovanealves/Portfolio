@@ -11,21 +11,10 @@ import Layout from "../../layouts/Layout.astro";
       Explore the technologies and tools that drive my career as a developer.
     </p>
 
-    <div class="mt-6 space-y-7">
-      {
-        Object.entries(stackData).map(([category, items]) => (
-          <div>
-            <h1 class="mb-3 text-xl font-semibold">{category}</h1>
-            <div class="grid grid-cols-2 place-items-center gap-3 md:grid-cols-4 lg:grid-cols-6">
-              {items.map((item) => (
-                <div>
-                  <CardStack {...item} />
-                </div>
-              ))}
-            </div>
-          </div>
-        ))
-      }
+    <div
+      class="mt-6 grid grid-cols-2 place-content-center place-items-center gap-3 md:grid-cols-4 lg:grid-cols-6"
+    >
+      {stackData.map((item) => <CardStack {...item} loading="eager" />)}
     </div>
   </main></Layout
 >

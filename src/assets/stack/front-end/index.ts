@@ -1,11 +1,7 @@
-export { default as css } from "./css.svg";
-export { default as framerMotion } from "./framer-motion.svg";
-export { default as html } from "./html5.svg";
 export { default as javascript } from "./javascript.svg";
 export { default as nextjs } from "./nextjs.svg";
 export { default as radixUi } from "./radix-ui.svg";
 export { default as react } from "./react.svg";
-export { default as sass } from "./sass.svg";
 export { default as tailwindCss } from "./tailwind-css.svg";
 export { default as tanstackQuery } from "./tanstack-query.svg";
 export { default as typescript } from "./typescript.svg";
