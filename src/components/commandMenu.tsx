@@ -28,7 +28,13 @@ export function CommandMenu({ language }: { language: "pt-br" | "en" }) {
 
   return (
     <>
-      <Button variant="outline" size="icon" onClick={() => setOpen(true)}>
+      <Button
+        variant="outline"
+        size="icon"
+        onClick={() => setOpen(true)}
+        aria-label="button to open Command
+"
+      >
         <Command className="h-[1.2rem] w-[1.2rem]" />
       </Button>
 

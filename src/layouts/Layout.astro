@@ -48,7 +48,7 @@ const lang = getLangFromUrl(Astro.url);
   <body>
     <div class="z-10 flex justify-end gap-2 p-3">
       <CommandMenu language={lang} client:load />
-      <ModeToggle client:load />
+      <ModeToggle language={lang} client:load />
     </div>
     <slot />
   </body>
