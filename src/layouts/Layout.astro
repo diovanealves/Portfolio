@@ -1,12 +1,15 @@
 ---
 import "@/styles/globals.css";
 import { ModeToggle } from "@/components/modeToggle";
+import { CommandMenu } from "@/components/commandMenu.tsx";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <script is:inline>
@@ -33,7 +36,7 @@ const { title } = Astro.props;
   }
 </script>
 
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -43,7 +46,8 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <div class="z-10 flex justify-end p-3">
+    <div class="z-10 flex justify-end gap-2 p-3">
+      <CommandMenu language={lang} client:load />
       <ModeToggle client:load />
     </div>
     <slot />
