@@ -1,0 +1,22 @@
+---
+import { projectQuery } from "@/graphql/project.query";
+import { getLangFromUrl } from "@/i18n/utils";
+import Layout from "@/layouts/Layout.astro";
+import type { Project } from "@/types/project.interface";
+
+const lang = getLangFromUrl(Astro.url);
+const langFormatted = lang.replace("-", "");
+
+const response = await fetch(
+  import.meta.env.HYGRAPH_ENDPOINT,
+  projectQuery(langFormatted),
+);
+const json = await response.json();
+const projects: Project[] = json.data.projects;
+---
+
+<Layout title="Projetos">
+  <main>
+    <h1>{projects.map((project) => <h1>{project.description}</h1>)}</h1>
+  </main>
+</Layout>
