@@ -2,13 +2,8 @@ import * as backEnd from "@/assets/stack/back-end/index";
 import * as database from "@/assets/stack/database/index";
 import * as frontEnd from "@/assets/stack/front-end/index";
 import * as infra from "@/assets/stack/infra/index";
-export interface stackProps {
-  image: string;
-  title: string;
-  href: string;
-  classname?: string;
-  loading: "eager" | "lazy";
-}
+import type { stackProps } from "@/types/stack.interface";
+
 
 export const stackData: stackProps[] = [
   {
