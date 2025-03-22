@@ -26,13 +26,17 @@ useHead({
 </script>
 
 <template>
-  <main class="mx-auto mt-12 w-11/12 max-w-5xl px-4">
-    <HeroSection />
+  <main
+    class="min-h-screen bg-gray-50 px-4 transition-all duration-300 dark:bg-black dark:text-zinc-100"
+  >
+    <div class="mx-auto w-11/12 max-w-5xl">
+      <Header />
 
-    <div class="mt-10">
-      <div class="grid gap-3 lg:grid-cols-[75%,25%]">
-        <AboutMe />
-        <SocialLinks />
+      <div class="mt-10">
+        <div class="grid h-96 grid-cols-1 gap-3 lg:grid-cols-[70%,30%]">
+          <AboutMe />
+          <SocialCard />
+        </div>
       </div>
     </div>
   </main>
