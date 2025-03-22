@@ -4,7 +4,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="relative">
+  <div>
     <BaseCard to="/about-me" :title="t('about.title')">
       <template #icon>
         <Icon

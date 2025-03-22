@@ -17,14 +17,15 @@ const computedPath = computed(() => {
     role="link"
   >
     <div
-      class="group relative z-0 block cursor-pointer overflow-hidden border border-blue-100/20 bg-gradient-to-b from-white to-blue-50/50 shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md dark:from-zinc-900 dark:to-blue-950/20"
+      class="group relative z-0 block h-full overflow-hidden rounded-lg border bg-gradient-to-b transition-all duration-300 backdrop:blur-md hover:shadow-lg dark:border-zinc-800 dark:from-zinc-950 dark:to-zinc-900"
+      :class="{ 'cursor-pointer': computedPath }"
     >
       <div
         class="bg-grid-blue-500/[0.02] dark:bg-grid-white-500/[0.02] absolute inset-0 [mask-image:linear-gradient(0deg,transparent,black)]"
       />
 
-      <div class="relative p-6 sm:p-8">
-        <div class="group mb-6 flex items-center justify-between gap-4">
+      <div class="relative p-6">
+        <div class="group mb-3 flex items-center justify-between gap-4">
           <div class="relative flex items-center gap-2">
             <div
               class="absolute inset-0 rounded-full bg-blue-100 opacity-0 blur-md transition-opacity duration-300 group-hover:opacity-90 dark:bg-blue-500/20"
