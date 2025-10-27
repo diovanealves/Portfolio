@@ -24,7 +24,7 @@ const computedPath = computed(() => {
         class="bg-grid-blue-500/[0.02] dark:bg-grid-white-500/[0.02] absolute inset-0 [mask-image:linear-gradient(0deg,transparent,black)]"
       />
 
-      <div class="relative p-6">
+      <div class="relative p-4">
         <div class="group mb-3 flex items-center justify-between gap-4">
           <div class="relative flex items-center gap-2">
             <div
@@ -33,6 +33,7 @@ const computedPath = computed(() => {
             <slot name="icon" />
 
             <h2
+              v-if="title"
               class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-xl font-semibold text-transparent dark:from-blue-400 dark:to-blue-300"
             >
               {{ title }}

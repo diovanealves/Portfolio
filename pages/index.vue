@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import FeaturedProjectCard from "~/components/featured-project-card.vue";
+
 const { locale } = useI18n();
 
 useHead({
@@ -27,16 +29,18 @@ useHead({
 
 <template>
   <main
-    class="min-h-screen bg-gray-50 px-4 transition-all duration-300 dark:bg-black dark:text-zinc-100"
+    class="min-h-screen bg-gray-50 px-4 pb-6 transition-all duration-300 dark:bg-black dark:text-zinc-100"
   >
     <div class="mx-auto w-11/12 max-w-5xl">
       <Header />
 
       <div class="mt-10">
-        <div class="grid h-96 grid-cols-1 gap-3 lg:grid-cols-[70%,30%]">
+        <div class="grid grid-cols-1 gap-3 lg:grid-cols-[70%,30%]">
           <AboutMe />
           <SocialCard />
+          <FeaturedProjectCard image="adsa" link="adas" />
         </div>
+        <ContactCard />
       </div>
     </div>
   </main>
