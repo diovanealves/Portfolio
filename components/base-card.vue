@@ -25,7 +25,10 @@ const computedPath = computed(() => {
       />
 
       <div class="relative p-4">
-        <div class="group mb-3 flex items-center justify-between gap-4">
+        <div
+          class="group mb-3 flex items-center justify-between gap-4"
+          v-if="title || $slots.icon"
+        >
           <div class="relative flex items-center gap-2">
             <div
               class="absolute inset-0 rounded-full bg-blue-100 opacity-0 blur-md transition-opacity duration-300 group-hover:opacity-90 dark:bg-blue-500/20"

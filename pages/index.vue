@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import FeaturedProjectCard from "~/components/featured-project-card.vue";
-
 const { locale } = useI18n();
 
 useHead({
@@ -35,10 +33,10 @@ useHead({
       <Header />
 
       <div class="mt-10">
-        <div class="grid grid-cols-1 gap-3 lg:grid-cols-[70%,30%]">
+        <div class="grid grid-cols-1 gap-3 lg:grid-cols-[60%,40%]">
           <AboutMe />
           <SocialCard />
-          <FeaturedProjectCard image="adsa" link="adas" />
+          <TechnologiesCard />
         </div>
         <ContactCard />
       </div>
