@@ -37,7 +37,7 @@ const computedPath = computed(() => {
 
             <h2
               v-if="title"
-              class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-xl font-semibold text-transparent dark:from-blue-400 dark:to-blue-300"
+              class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-xl font-bold text-transparent dark:from-blue-400 dark:to-blue-300"
             >
               {{ title }}
             </h2>
