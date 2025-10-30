@@ -12,5 +12,15 @@
   "technologies.title": "Technologies I use",
   "contact.title": "Shall we work together?",
   "contact.description": "I am available for freelance projects and full-time opportunities. Let's create something amazing!",
-  "contact.button": "Start Conversation"
+  "contact.button": "Start Conversation",
+  "about": {
+    "button": "Back",
+    "title": "About Diovane Alves",
+    "paragraph1": "With more than 3 years of experience in web development, I have been dedicated to creating robust, scalable applications aligned with real business needs.",
+    "paragraph2": "My journey began with a curiosity to understand how things work behind the screen. Over time, that curiosity evolved into a passion for solving complex problems and turning ideas into efficient digital experiences.",
+    "paragraph3": "I am currently seeking an opportunity as a full-stack developer, where I can apply my knowledge to build high-performance and well-structured web solutions. I have experience with Vue.js, React, Node.js, Java, Tailwind CSS, among other technologies.",
+    "paragraph4": "Beyond development itself, I value best practices, architecture, API integrations, databases, and collaboration with multidisciplinary teams, following agile methodologies to consistently deliver results.",
+    "paragraph5": "I am a lifelong learner, always attentive to new trends and continuously seeking growth. I believe in the power of technology to transform businesses and positively impact lives — that is my daily motivation."
+  },
+  "common": "Back"
 }
