@@ -1,11 +1,16 @@
 <script setup lang="ts">
 import { BaseCard } from "#components";
 const { t } = useI18n();
+
+const translatedRoute = useTranslatedRoute({
+  en: "about-me",
+  "pt-br": "sobre-mim",
+});
 </script>
 
 <template>
   <div>
-    <BaseCard to="/about-me" :title="t('about.title')">
+    <BaseCard :to="translatedRoute" :title="t('about.title')">
       <template #icon>
         <Icon
           name="lucide:sparkles"

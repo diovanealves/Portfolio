@@ -16,11 +16,18 @@ export default defineNuxtConfig({
     ],
     defaultLocale: "en",
     langDir: "locales",
-    strategy: "prefix_and_default",
+    strategy: "prefix",
+    customRoutes: "config",
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "i18n_redirected",
       redirectOn: "root",
+    },
+    pages: {
+      "about-me": {
+        en: "/about-me",
+        "pt-br": "/sobre-mim",
+      },
     },
   },
 });

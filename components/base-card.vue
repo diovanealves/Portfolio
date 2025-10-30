@@ -2,23 +2,18 @@
 import { NuxtLink } from "#components";
 
 const props = defineProps<{ to?: string; title: string }>();
-const { locale } = useI18n();
-
-const computedPath = computed(() => {
-  return props.to ? `/${locale.value}${props.to}` : null;
-});
 </script>
 
 <template>
   <component
-    :is="computedPath ? NuxtLink : 'div'"
-    :to="computedPath"
+    :is="to ? NuxtLink : 'div'"
+    :to="to"
     :aria-label="title"
     role="link"
   >
     <div
       class="group relative z-0 block h-full overflow-hidden rounded-lg border bg-gradient-to-b transition-all duration-300 backdrop:blur-md hover:shadow-lg dark:border-zinc-800 dark:from-zinc-950 dark:to-zinc-900"
-      :class="{ 'cursor-pointer': computedPath }"
+      :class="{ 'cursor-pointer': to }"
     >
       <div
         class="bg-grid-blue-500/[0.02] dark:bg-grid-white-500/[0.02] absolute inset-0 [mask-image:linear-gradient(0deg,transparent,black)]"
@@ -43,7 +38,7 @@ const computedPath = computed(() => {
             </h2>
           </div>
           <Icon
-            v-if="computedPath"
+            v-if="to"
             name="lucide:move-up-right"
             class="my-auto flex transform items-center text-blue-500 opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100"
             size="20"
