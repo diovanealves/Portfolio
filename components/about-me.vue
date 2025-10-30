@@ -20,13 +20,13 @@ const translatedRoute = useTranslatedRoute({
 
       <template #content>
         <p class="leading-relaxed text-zinc-600 dark:text-zinc-300">
-          {{ t("about.description.first") }}
+          {{ t("about.paragraph1") }}
         </p>
         <p class="leading-relaxed text-zinc-600 dark:text-zinc-300">
-          {{ t("about.description.second") }}
+          {{ t("about.paragraph2") }}
         </p>
         <p class="leading-relaxed text-zinc-600 dark:text-zinc-300">
-          {{ t("about.description.third") }}
+          {{ t("about.paragraph3") }}
         </p>
       </template>
     </BaseCard>

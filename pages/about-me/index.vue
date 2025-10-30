@@ -15,24 +15,24 @@ const { t } = useI18n();
         {{ t("common") }}
       </NuxtLink>
 
-      <h1 class="mb-8 mt-6 text-4xl font-bold">{{ $t("about.title") }}</h1>
+      <h1 class="mb-8 mt-6 text-4xl font-bold">{{ $t("aboutMe.title") }}</h1>
       <div
         class="space-y-6 text-base font-medium leading-relaxed text-gray-300"
       >
         <p>
-          {{ $t("about.paragraph1") }}
+          {{ $t("aboutMe.paragraph1") }}
         </p>
         <p>
-          {{ $t("about.paragraph2") }}
+          {{ $t("aboutMe.paragraph2") }}
         </p>
         <p>
-          {{ $t("about.paragraph3") }}
+          {{ $t("aboutMe.paragraph3") }}
         </p>
         <p>
-          {{ $t("about.paragraph4") }}
+          {{ $t("aboutMe.paragraph4") }}
         </p>
         <p>
-          {{ $t("about.paragraph5") }}
+          {{ $t("aboutMe.paragraph5") }}
         </p>
       </div>
     </div>

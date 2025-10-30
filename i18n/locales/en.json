@@ -1,19 +1,28 @@
 {
-  "hero.available": "Available for projects",
-  "hero.description": "Full Stack Developer passionate about transforming ideas into memorable digital experiences. With a keen eye for design and performance, I create solutions that not only work, but delight",
-  "hero.curriculum": "Download my resume",
-
-  "about.title": "About me",
-  "about.description.first": "With over 3 years of experience in web development, I specialized in creating robust and scalable applications. My journey began with a passion for solving complex problems and evolved into a career dedicated to building exceptional digital experiences.",
-  "about.description.second": "Currently, I am a full stack developer, with a primary focus on creating high-performance web solutions. I have experience with technologies such as Vue.js, React, React-Native, Node.js and Java, among others.",
-  "about.description.third": "I am a lifelong learner, always attentive to the latest trends and best practices in the industry. I believe in the power of technology to transform businesses and lives, and this is my greatest daily motivation.",
-
-  "social.title": "Social Links",
-  "technologies.title": "Technologies I use",
-  "contact.title": "Shall we work together?",
-  "contact.description": "I am available for freelance projects and full-time opportunities. Let's create something amazing!",
-  "contact.button": "Start Conversation",
+  "common": "Back",
+  "hero": {
+    "available": "Available for projects",
+    "description": "Full Stack Developer passionate about transforming ideas into memorable digital experiences. With a keen eye for design and performance, I create solutions that not only work, but delight",
+    "curriculum": "Download my resume"
+  },
   "about": {
+    "title": "About me",
+    "paragraph1": "With over 3 years of experience in web development, I specialized in creating robust and scalable applications. My journey began with a passion for solving complex problems and evolved into a career dedicated to building exceptional digital experiences.",
+    "paragraph2": "Currently, I am a full stack developer, with a primary focus on creating high-performance web solutions. I have experience with technologies such as Vue.js, React, React-Native, Node.js and Java, among others.",
+    "paragraph3": "I am a lifelong learner, always attentive to the latest trends and best practices in the industry. I believe in the power of technology to transform businesses and lives, and this is my greatest daily motivation."
+  },
+  "social": {
+    "title": "Social Links"
+  },
+  "technologies": {
+    "title": "Technologies I use"
+  },
+  "contact": {
+    "title": "Shall we work together?",
+    "description": "I am available for freelance projects and full-time opportunities. Let's create something amazing!",
+    "button": "Start Conversation"
+  },
+  "aboutMe": {
     "button": "Back",
     "title": "About Diovane Alves",
     "paragraph1": "With more than 3 years of experience in web development, I have been dedicated to creating robust, scalable applications aligned with real business needs.",
@@ -21,6 +30,5 @@
     "paragraph3": "I am currently seeking an opportunity as a full-stack developer, where I can apply my knowledge to build high-performance and well-structured web solutions. I have experience with Vue.js, React, Node.js, Java, Tailwind CSS, among other technologies.",
     "paragraph4": "Beyond development itself, I value best practices, architecture, API integrations, databases, and collaboration with multidisciplinary teams, following agile methodologies to consistently deliver results.",
     "paragraph5": "I am a lifelong learner, always attentive to new trends and continuously seeking growth. I believe in the power of technology to transform businesses and positively impact lives — that is my daily motivation."
-  },
-  "common": "Back"
+  }
 }
