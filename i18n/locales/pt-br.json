@@ -29,5 +29,9 @@
     "paragraph3": "Atualmente, estou em busca de uma oportunidade como desenvolvedor full-stack, onde eu possa aplicar meus conhecimentos na construção de soluções web de alta performance e bem estruturadas. Tenho experiência com Vue.js, React, Node.js, Java, Tailwind CSS, entre outras tecnologias.",
     "paragraph4": "Além do desenvolvimento em si, valorizo boas práticas, arquitetura, integrações com APIs, bancos de dados e colaboração com equipes multidisciplinares, seguindo metodologias ágeis para entregar resultados consistentes.",
     "paragraph5": "Sou um eterno aprendiz. Sigo atento às tendências, buscando evoluir constantemente. Acredito no poder da tecnologia para transformar negócios e impactar positivamente vidas — essa é minha motivação diária."
+  },
+  "stack": {
+    "title": "Tecnologias que utilizo",
+    "description": "Ferramentas e tecnologias que domino para criar soluções web modernas, escaláveis e de alta performance."
   }
 }
