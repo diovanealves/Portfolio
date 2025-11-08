@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      try {
+        const cookies = document.cookie.split("; ").reduce((acc, cur) => {
+          const [name, value] = cur.split("=");
+          acc[name] = value;
+          return acc;
+        }, {});
+
+        const theme = cookies.theme;
+
+        if (
+          theme === "dark" ||
+          (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      } catch (_) {}
+    </script>
+  </head>
+  <body>
+    {{APP}}
+  </body>
+</html>

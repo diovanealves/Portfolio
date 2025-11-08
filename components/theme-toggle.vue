@@ -1,17 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
-const isDarkMode = ref(false);
-
-function toggleTheme() {
-  isDarkMode.value = !isDarkMode.value;
-
-  if (isDarkMode.value) {
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-  }
-}
+const { isDark, toggleTheme } = useTheme();
 </script>
 
 <template>
@@ -23,7 +11,7 @@ function toggleTheme() {
   >
     <Icon
       class="h-5 w-5 transition-colors"
-      :name="isDarkMode ? 'lucide:moon' : 'lucide:sun'"
+      :name="isDark ? 'lucide:moon' : 'lucide:sun'"
     />
   </button>
 </template>

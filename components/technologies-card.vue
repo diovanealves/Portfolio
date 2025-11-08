@@ -3,8 +3,6 @@ import { technologies } from "@/data/technologies";
 
 const { t, locale } = useI18n();
 const hoveredTech = ref<string | null>(null);
-
-console.log(locale.value);
 </script>
 
 <template>
